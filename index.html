@@ -205,7 +205,7 @@ function render(){
         </div>
         <div class="field-row">
           <div class="field"><label>Tipo de ropa</label><select data-id="${load.id}" data-field="type">${opts}</select></div>
-          <div class="field"><label>Cantidad (${t?t.unit:'piezas'})</label><input type="number" min="1" placeholder="${ph(t)}" value="${load.qty!==null?load.qty:''}" data-id="${load.id}" data-field="qty"></div>
+          <div class="field"><label>Cantidad (${t?t.unit:'piezas'})</label><input type="number" min="0" inputmode="numeric" pattern="[0-9]*" placeholder="${ph(t)}" value="${load.qty!==null?load.qty:''}" data-id="${load.id}" data-field="qty"></div>
         </div>
         <div class="load-estimate"><span class="est-label"></span><span class="est-val"></span></div>
       `;
