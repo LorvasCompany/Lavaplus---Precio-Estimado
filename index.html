@@ -157,6 +157,70 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f4fbfd;color:#1a2e35;}
   flex-direction: column;
 }
 
+.site-footer {
+  text-align: center;
+  padding: 40px 24px;
+  background: white;
+  border-top: 1px solid #e0f2f6;
+  margin-top: 24px;
+}
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-dark);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.location-link:hover {
+  opacity: 0.8;
+}
+.location-link svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--brand);
+}
+
+.footer-label {
+  font-size: 13px;
+  color: #4a7a85;
+  margin-bottom: 12px;
+}
+.maps-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: var(--brand-dark);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid #d0edf3;
+  box-shadow: 0 4px 12px rgba(13, 156, 181, 0.08);
+  transition: all 0.2s ease;
+  margin-bottom: 8px;
+}
+.maps-button:hover {
+  background: var(--brand-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 156, 181, 0.12);
+  color: var(--brand);
+}
+.maps-button svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--brand);
+}
+.footer-address {
+  font-size: 12px;
+  color: #8aacb2;
+  margin-top: 4px;
+}
+
 </style>
 </head>
 
@@ -214,6 +278,16 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f4fbfd;color:#1a2e35;}
     </div>
   </div>
 </div>
+
+<footer class="site-footer">
+  <p class="footer-label">Encuentranos en</p>
+  <a href="https://maps.app.goo.gl/ggTydJ5qyQ2CP4zy9" target="_blank" class="maps-button">
+    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+    Abrir en Google Maps
+  </a>
+  <p class="footer-address">Blvr. Universitario, San Salvador</p>
+</footer>
+
 
 <script>
 const RATE=1.00,MIN=5.00,IND_PRICE=1.00;
